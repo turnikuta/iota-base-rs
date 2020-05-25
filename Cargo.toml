@@ -1,0 +1,68 @@
+[package]
+name = "iota-base-rs"
+version = "0.1.0"
+authors = ["turnikuta <turnikuta@mail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+iota-core = "0.2.0-alpha.2"
+iota-conversion = "0.5.1"
+zmq = "0.9.2"
+anyhow = "1.0.28"
+tokio = { version = "0.2" , features = ["full"] }
+serde_json = "1.0.52"
+rand = "0.7"
+
+[[bin]]
+name = "create_account"
+path = "src/create_value_transaction/create_account.rs"
+
+[[bin]]
+name = "get_account_info"
+path = "src/create_value_transaction/get_account_info.rs"
+
+[[bin]]
+name = "transfer_value"
+path = "src/create_value_transaction/transfer_value.rs"
+
+[[bin]]
+name = "message_trx_in_2_steps"
+path = "src/create_message_transaction/message_trx_in_2_steps.rs"
+
+[[bin]]
+name = "message_trx_in_3_steps"
+path = "src/create_message_transaction/message_trx_in_3_steps.rs"
+
+[[bin]]
+name = "message_trx_in_5_steps"
+path = "src/create_message_transaction/message_trx_in_5_steps.rs"
+
+[[bin]]
+name = "get_message_from_trx"
+path = "src/create_message_transaction/get_message_from_trx.rs"
+
+[[bin]]
+name = "get_addresses_of_account"
+path = "src/misc_tools/get_addresses_of_account.rs"
+
+[[bin]]
+name = "get_transaction_trytes"
+path = "src/misc_tools/get_transaction_trytes.rs"
+
+[[bin]]
+name = "monitor_incoming_value_trx"
+path = "src/subscribe_node_events/monitor_incoming_value_trx.rs"
+
+#[[bin]]
+#name = "monitor_incoming_trx_data"
+#path = "src/subscribe_node_events/monitor_incoming_trx_data.rs"
+
+[[bin]]
+name = "monitor_confirmed_trx"
+path = "src/subscribe_node_events/monitor_confirmed_trx.rs"
+
+[[bin]]
+name = "monitor_address"
+path = "src/subscribe_node_events/monitor_address.rs"

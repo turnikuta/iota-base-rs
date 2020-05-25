@@ -35,7 +35,7 @@ Confirmed Transaction: NDDXWH9MFSAKDGPJHXZHIKQPKYANKKFELAYHBFBEZERAUFBOOKEZUMSCA
 
 **Example:** 
 ```
-$ cargo run --bin monitor_alue_trx
+$ cargo run --bin monitor_value_trx
     Finished dev [unoptimized + debuginfo] target(s) in 0.51s
      Running `target/debug/monitor_value_trx`
 Value Transaction: I9PWQCPWKU9XUBUFYIUMONAXYBETXHIHETKJGXVGFHAWL9KUMLILMXAQMGZFUCAIIZXGQXYNSWIRTB999, Value: 50

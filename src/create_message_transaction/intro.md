@@ -8,7 +8,7 @@ The scripts show how to save a message in the IOTA Tangle. The Rust client libra
 - get_message_from_trx.rs
 
 #### Create Message Transaction in 5 Steps
-**Example 1:** Long Message that fits in 3 transaction
+**Example 1:** long message that needs 3 transactions
 ```
 $ cargo run --bin message_trx_in_5_steps
     Finished dev [unoptimized + debuginfo] target(s) in 0.13s
@@ -20,7 +20,7 @@ Transaction MBWFBVBWLCSJRUODEBIHAFMEFVIPWBCQXXETURMNMSDJZGPSEXVOKAOBRRQTIHPXJINW
 ```
 
 #### Create Message Transaction in 2 Steps
-**Example 2:** short message that needs 1 transactions
+**Example 2:** short message that fits into 1 transaction
 ```
 $ cargo run --bin message_trx_in_2_steps
     Finished dev [unoptimized + debuginfo] target(s) in 0.12s
@@ -30,7 +30,7 @@ Transaction PMUE9TMVVQMKKPYGQONASWWEZNTSITDZKOXNUTZEHAVJKBMKFGEFDTGF9SWYUWZNVQSL
 ```
 
 #### Create Message Transaction in 3 Steps
-**Example 3:** short message with JSON document that needs 1 transactions
+**Example 3:** short message with JSON document that fits into 1 transaction
 ```
 $ cargo run --bin message_trx_in_3_steps
     Finished dev [unoptimized + debuginfo] target(s) in 0.11s

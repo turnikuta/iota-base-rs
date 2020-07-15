@@ -59,7 +59,12 @@ async fn main() -> Result<()> {
     //
     // Step 2 - prepare transfer 
     //
-    let bundle = iota::Client::prepare_transfers(&iota_seed)
+
+
+    //
+    // prepare_transfers(None) doesn't work (see https://github.com/iotaledger/iota.rs/issues/100)
+    //
+    let bundle = iota::Client::prepare_transfers(Some(&iota_seed))
                                .transfers(transfers)
                                .security(security)
                                .build()

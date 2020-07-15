@@ -1,18 +1,18 @@
 [package]
 name = "iota-base-rs"
-version = "0.1.0"
+version = "0.1.1"
 authors = ["turnikuta <turnikuta@mail.com>"]
 edition = "2018"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-iota-core = "0.2.0-alpha.2"
+iota-core = "0.2.0-alpha.3"
 iota-conversion = "0.5.1"
 zmq = "0.9.2"
-anyhow = "1.0.28"
+anyhow = "1.0.31"
 tokio = { version = "0.2" , features = ["full"] }
-serde_json = "1.0.52"
+serde_json = "1.0.56"
 rand = "0.7"
 
 [[bin]]
@@ -52,12 +52,8 @@ name = "get_transaction_trytes"
 path = "src/misc_tools/get_transaction_trytes.rs"
 
 [[bin]]
-name = "monitor_incoming_value_trx"
-path = "src/subscribe_node_events/monitor_incoming_value_trx.rs"
-
-#[[bin]]
-#name = "monitor_incoming_trx_data"
-#path = "src/subscribe_node_events/monitor_incoming_trx_data.rs"
+name = "monitor_value_trx"
+path = "src/subscribe_node_events/monitor_value_trx.rs"
 
 [[bin]]
 name = "monitor_confirmed_trx"

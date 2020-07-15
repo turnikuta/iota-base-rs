@@ -66,7 +66,11 @@ async fn main() -> Result<()> {
     //       attach_to_tangle()     
     //       store_and_broadcast()
     //
-    let response = iota::Client::send_transfers(&iota_seed)
+
+    //
+    // send_transfers(None) doesn't work (see https://github.com/iotaledger/iota.rs/issues/100)
+    //
+    let response = iota::Client::send_transfers(Some(&iota_seed))
                                  .transfers(transfers)
                                  .min_weight_magnitude(mwm)
                                  .send()

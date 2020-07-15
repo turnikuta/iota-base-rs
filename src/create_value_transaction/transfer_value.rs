@@ -56,7 +56,7 @@ async fn main() -> Result<()> {
         tag: None,
     });
 
-    let response = iota::Client::send_transfers(&sender_iota_seed)
+    let response = iota::Client::send_transfers(Some(&sender_iota_seed))
                                  .transfers(transfers)
                                  .min_weight_magnitude(mwm)
                                  .send()
